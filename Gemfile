@@ -16,6 +16,11 @@ gem "sinatra-activerecord"
 # https://github.com/ruby/rake
 gem "rake"
 
+# A YAML parser and emitter
+# Ruby 3.1 and Psych 4.x are incompatible.
+# https://github.com/ruby/psych
+gem "psych", "< 4"
+
 # Provides functionality to interact with a SQLite3 database
 # https://github.com/sparklemotion/sqlite3-ruby
 gem "sqlite3", "~> 1.4"
